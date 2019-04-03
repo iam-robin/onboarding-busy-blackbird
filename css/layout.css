@@ -1,7 +1,7 @@
 /* random stuff to show the elements */
-nav, header, main, section, aside, footer, div {
-    background-color: rgba(0, 0, 0, .2);
-    padding: 32px;
+nav, header, main, section, article, aside, footer, div {
+    background-color: rgba(0, 0, 0, .1);
+    padding: 16px;
     margin: 4px;
 }
 
@@ -11,13 +11,13 @@ body {
     margin: 0 auto;
 }
 
-.wrapper {
+.two-column-wrapper {
     display: grid;
 }
 
 /* DESKTOP MEDIA QUERY */
 @media screen and (min-width: 1280px) {
-    .wrapper {
+    .two-column-wrapper {
         grid-template-columns: 3fr 1fr;
     }
 }

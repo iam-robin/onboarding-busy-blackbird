@@ -1,0 +1,17 @@
+/* random stuff to show the elements */
+nav, header, main, section, aside, footer, div {
+    background-color: rgba(0, 0, 0, .2);
+    padding: 32px;
+    margin: 4px;
+}
+
+.wrapper {
+    display: grid;
+}
+
+/* DESKTOP MEDIA QUERY */
+@media screen and (min-width: 800px) {
+    .wrapper {
+        grid-template-columns: 3fr 1fr;
+    }
+}

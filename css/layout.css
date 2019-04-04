@@ -5,6 +5,9 @@
     margin: 4px;
 }*/
 
+
+/* ///////// GENERAL STUFF ///////// */
+
 body {
     min-width: 320px;
     max-width: 1280px;
@@ -17,7 +20,7 @@ section {
 }
 
 
-/* /////////HEADER ///////// */
+/* ///////// HEADER ///////// */
 
 header .nav-container {
     background-color: #fff;
@@ -27,8 +30,9 @@ header .nav-container {
 header .nav-container input {
     padding: 8px 16px;
     border-radius: 32px;
-    background-color: #d2d2d2;
+    background-color: #E8E6E7;
     border: none;
+    margin-bottom: 16px;
 }
 
 header nav ul {
@@ -65,11 +69,15 @@ header section h1 {
 }
 
 header section button {
-    padding: 8px;
+    padding: 8px 16px;
     background-color: #fff;
     border: none;
     color: #469BCE;
+    margin-bottom: 16px;
 }
+
+
+/* ///////// MAIN ///////// */
 
 .two-column-wrapper {
     display: grid;

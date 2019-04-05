@@ -50,27 +50,87 @@
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Test Folder</a></li>
-        <li><a href="#">Test</a></li>
+        <li class="active"><a href="#">Test</a></li>
       </ul>
     </nav>
     <div class="two-column-wrapper">
-      <section>
+      <section> 
         <h1>Fundamentals I: Layout, Styling & Semantics</h1>
-        <section>
-          <h2>Image section (Landscape, no caption)</h2>
-          <img src="" alt="placeholder image">
+        <section class="image-section">
+          <h2>Image section<br> (Landscape, no caption)</h2>
+          <img src="img/placeholder-image-section.png" alt="placeholder image">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim convallis aenean et tortor at risus. Quam pellentesque nec nam aliquam sem et tortor. Sodales ut etiam sit amet. Nibh tortor id aliquet lectus. Mattis aliquam faucibus purus in massa. Etiam sit amet nisl purus. Dui id ornare arcu odio ut sem. In ornare quam viverra orci sagittis eu volutpat odio facilisis. Non sodales neque sodales ut. Mi bibendum neque egestas congue quisque egestas diam in. Fermentum odio eu feugiat pretium nibh ipsum consequat. Tortor consequat id porta nibh venenatis cras. Consequat id porta nibh venenatis cras sed felis eget. Erat velit scelerisque in dictum non consectetur a erat nam.</p>
         </section>
-        <section>
+        <section class="video-section">
           <h2>Video section</h2>
-          <img src="" alt="placeholder video image">
+          <img src="img/placeholder-video-section.png" alt="placeholder video image">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim convallis aenean et tortor at risus. Quam pellentesque nec nam aliquam sem et tortor. Sodales ut etiam sit amet. Nibh tortor id aliquet lectus. Mattis aliquam faucibus purus in massa. Etiam sit amet nisl purus. Dui id ornare arcu odio ut sem. In ornare quam viverra orci sagittis eu volutpat odio facilisis. Non sodales neque sodales ut. Mi bibendum neque egestas congue quisque egestas diam in. Fermentum odio eu feugiat pretium nibh ipsum consequat. Tortor consequat id porta nibh venenatis cras. Consequat id porta nibh venenatis cras sed felis eget. Erat velit scelerisque in dictum non consectetur a erat nam.</p>
         </section>
-        <section>
+        <section class="copytext-section">
           <h2>Copy text with all format types</h2>
+          <p>This is blind text. <strong>Bold text makes you pay attention.</strong> <sub>Sub</sub>scripts and <sup>Super</sup>scripts look funny.</p>
+          <ul>
+            <li>Some</li>
+            <li>Circles</li>
+          </ul>
+          <a class="external-link" href="#">This link leads to the CI.</a>
+          <a class="external-link" href="#">This link leads to the CI in a new window.</a>
+          <table>
+            <tr>
+              <th>Super Nice</th>
+              <th>Duper Table</th>
+            </tr>
+            <tr>
+              <td>Super</td>
+              <td>Duper</td>
+            </tr>
+            <tr>
+              <td>Nice</td>
+              <td>Table</td>
+              </tr>
+          </table>
+          <div class="quote">
+            <span class="quotation-mark"></span>
+            <p>Someone once said inspiring stuff like this"</p>
+          </div>
         </section>
-        <section>
+        <section class="form-section">
           <h2>Form</h2>
+          <form>
+            <label for="text-input">Text</label>
+            <input type="text" name="text-input-field" id="text-input">
+            <label for="mandatory-input">Text mandatory*</label>
+            <input type="text" name="mandatory-input-field" id="mandatory-input" required>
+            <label for="number-input">Number</label>
+            <input type="number" name="number-input-field" id="number-input">
+            <label for="textarea-input">Text Area</label>
+            <textarea id="textarea-input"></textarea>
+            <p>checkbox</p>
+            <div>
+              <input type="checkbox" id="yes-checkbox" name="yes">
+              <label for="yes-checkbox">yes</label>
+              <input type="checkbox" id="no-checkbox" name="no">
+              <label for="no-checkbox">no</label>
+            </div>
+            <p>radio</p>
+            <div>
+              <input type="radio" id="yes-radio" name="yes-no">
+              <label for="yes-radio">yes</label>
+              <input type="radio" id="no-radio" name="yes-no">
+              <label for="no-radio">no</label>
+            </div>
+            <p>select box</p>
+            <select>
+              <option value="yes">yes</option>
+              <option value="no">no</option>
+            </select>
+            <label for="email-input">email field (mandatory)*</label>
+            <input type="email" name="email-input-field" id="email-input">
+            <hr>
+            <button type="submit">Send</button>
+            <button type="reset">Cancel</button>
+            <p class="asterisk-description">All fields marked with an asterisk (*) are mandatory.</p>
+          </form>
         </section>
       </section>
       <aside>

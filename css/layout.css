@@ -405,6 +405,38 @@ main aside .information ul {
     margin: 0;
 }
 
+.document-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.document-list li {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #E8E6E7;
+    padding: 12px 0;
+    margin: 0;
+}
+
+.document-list li .document-image {
+    height: 40px;
+    width: 32px;
+    background-color: #469BCE;
+    margin-right: 12px;
+}
+
+.document-list li p:first-child {
+    color: #469BCE;
+    margin: 0;
+    margin-bottom: 2px;
+}
+
+.document-list li p:last-child {
+    color: #B2B2B2;
+    margin: 0;
+}
+
 /* ///////// DESKTOP MEDIA QUERY ///////// */
 @media screen and (min-width: 1280px) {
     .two-column-wrapper {

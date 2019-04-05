@@ -177,7 +177,7 @@ input + label, select + label {
     margin-top: 24px;
 }
 
-section, nav {
+section, nav, article {
     padding: 16px;
 }
 
@@ -405,6 +405,10 @@ main aside .information ul {
     margin: 0;
 }
 
+main aside:last-child {
+    margin-bottom: 40px;
+}
+
 .document-list {
     list-style: none;
     padding: 0;
@@ -435,6 +439,23 @@ main aside .information ul {
 .document-list li p:last-child {
     color: #B2B2B2;
     margin: 0;
+}
+
+
+/* TEASERS */
+
+.teasers h3 {
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.teasers .teaser-row {
+    background-color: #F4F2F3;
+    padding-bottom: 32px;
+}
+
+.teasers .teaser-row img {
+    width: 100%;
 }
 
 /* ///////// DESKTOP MEDIA QUERY ///////// */

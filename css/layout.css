@@ -1,13 +1,4 @@
-/* random stuff to show the elements */
-/*nav, header, main, section, article, aside, footer, div {
-    background-color: rgba(0, 0, 0, .1);
-    padding: 8px;
-    margin: 4px;
-}*/
-
-
 /* ///////// GENERAL STUFF ///////// */
-
 body {
     min-width: 320px;
     max-width: 1280px;
@@ -200,9 +191,7 @@ main button[type="submit"] {
     color: #fff;
 }
 
-
 /* ///////// HEADER ///////// */
-
 header .nav-container {
     background-color: #fff;
     padding: 16px;
@@ -265,29 +254,33 @@ header section button:after {
     background-color: #469BCE;
 }
 
-
 /* ///////// MAIN ///////// */
-
-main h1 {
+h1 {
     font-weight: 300;
     font-size: 34px;
     margin: 0;
 }
 
-main h2 {
+h2 {
     font-weight: 300;
-    font-size: 26px;
+    font-size: 28px;
 }
 
-main section>section {
+h3 {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0;
+}
+
+section>section {
     margin-bottom: 48px;
 }
 
-main section>section:last-child {
+section>section:last-child {
     margin-bottom: 0;
 }
 
-main strong {
+strong {
     font-weight: 700;
 }
 
@@ -329,49 +322,38 @@ main>nav ul li.active:before {
 }
 
 
-/* IMAGE SECTION */
-
-main .image-section img {
-    width: 100%;
-}
-
+/* IMAGE/VIDEO SECTION */
 .two-column-wrapper {
     display: grid;
 }
 
-/* VIDEO SECTION */
-main .video-section img {
+.image-section img, .video-section img  {
     width: 100%;
 }
 
 /* COPY TEXT SECTION */
-main .copytext-section ul {
+.copytext-section ul {
     margin-bottom: 24px;
 }
 
-main .copytext-section table {
+.copytext-section table {
     margin-top: 24px;
 }
 
-main .form-section p {
+.form-section p {
     margin: 32px 0 0 0;
 }
 
-main .form-section p, main .form-section label {
+.form-section p, .form-section label {
     color: #7A7A7A;
 }
 
-main .form-section .asterisk-description {
+.form-section .asterisk-description {
     margin-top: 8px;
 }
 
 /* ASIDE */
-main aside h3 {
-    font-weight: 300;
-    margin: 0;
-}
-
-main aside h3:after {
+aside h3:after {
     content: '';
     display: block;
     width: 100%;
@@ -380,32 +362,32 @@ main aside h3:after {
     background-color: #E8E6E7;
 }
 
-main aside .contact-wrapper {
+aside .contact-wrapper {
     display: grid;
     grid-template-columns: 1fr 2fr;
     margin-top: 20px;
 }
 
-main aside .contact-wrapper img {
+aside .contact-wrapper img {
     width: 100%;
     margin-top: 4px;
 }
 
-main aside .contact-wrapper p {
+aside .contact-wrapper p {
     margin-top: 4px;
 }
 
-main aside .contact-wrapper .information {
+aside .contact-wrapper .information {
     padding-left: 16px;
 }
 
-main aside .information ul {
+aside .information ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-main aside:last-child {
+aside:last-child {
     margin-bottom: 40px;
 }
 
@@ -443,10 +425,12 @@ main aside:last-child {
 
 
 /* TEASERS */
+.teasers article img {
+    width: 100%;
+}
 
-.teasers h3 {
-    font-weight: 300;
-    font-size: 24px;
+.teasers article h3+img {
+    margin-top: 8px;
 }
 
 .teasers .teaser-row {
@@ -454,8 +438,42 @@ main aside:last-child {
     padding-bottom: 32px;
 }
 
-.teasers .teaser-row img {
-    width: 100%;
+.video-thumbnail .time-stamp {
+    margin-top: 8px;
+    text-align: right;
+    color: #B2B2B2;
+}
+
+.teaser-container {
+    padding: 0 16px;
+}
+
+.teasers article {
+    padding: 16px;
+}
+
+.teasers .document-list {
+    border-top: 1px solid #E8E6E7;
+}
+
+.teaser-container article {
+    padding: 0;
+}
+
+/* ///////// FOOTER /////////  */
+footer {
+    color: #fff;
+    background-color: #4B5258;
+    padding: 16px;
+}
+
+footer .external-link {
+    color: #fff;
+    font-weight: 400;
+}
+
+footer .external-link:before {
+    background-color: #fff;
 }
 
 /* ///////// DESKTOP MEDIA QUERY ///////// */

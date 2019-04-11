@@ -458,6 +458,11 @@ aside:last-child {
 
 .teaser-container article {
     padding: 0;
+    margin-bottom: 40px;
+}
+
+.teaser-container article:last-child {
+    margin-bottom: 80px;
 }
 
 /* ///////// FOOTER /////////  */

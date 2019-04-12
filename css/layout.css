@@ -201,13 +201,18 @@ header .nav-container {
     padding: 16px;
 }
 
+header .search-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 24px 16px 0;
+}
+
 header .nav-container input {
     width: 180px;
     padding: 4px 24px;
     border-radius: 32px;
     background-color: #E8E6E7;
     border: none;
-    margin-bottom: 16px;
 }
 
 header nav ul {
@@ -273,7 +278,7 @@ h2 {
 h3 {
     font-size: 20px;
     font-weight: 300;
-    margin: 0;
+    margin: 0 0 8px 0;
 }
 
 section>section {
@@ -327,7 +332,7 @@ main>nav ul li.active:before {
 
 
 /* IMAGE/VIDEO SECTION */
-.two-column-wrapper {
+.two-column-wrapper-3-1 {
     display: grid;
 }
 
@@ -354,6 +359,16 @@ main>nav ul li.active:before {
 
 .form-section .asterisk-description {
     margin-top: 8px;
+}
+
+.form-section .btn-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form-section .btn-container div {
+    margin-right: 16px;
 }
 
 /* ASIDE */
@@ -433,10 +448,6 @@ aside:last-child {
     width: 100%;
 }
 
-.teasers article h3+img {
-    margin-top: 8px;
-}
-
 .teasers .teaser-row {
     background-color: #F4F2F3;
     padding-bottom: 32px;
@@ -449,7 +460,7 @@ aside:last-child {
 }
 
 .teaser-container {
-    padding: 0 16px;
+    padding: 0 24px;
 }
 
 .teasers article {
@@ -485,9 +496,54 @@ footer .external-link:before {
     background-color: #fff;
 }
 
-/* ///////// DESKTOP MEDIA QUERY ///////// */
+/* ///////// MEDIA QUERIES ///////// */
+@media screen and (min-width: 480px) {
+    .image-section img {
+        float: left;
+        width: 50%;
+        margin: 4px 24px 16px 0;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .teaser-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 32px;
+    }
+
+    .teaser-row h2 {
+        margin-top: 0;
+    }
+
+    .two-column-wrapper-1-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 32px;
+        padding: 24px;
+    }
+
+    .two-column-wrapper-1-1 article {
+        padding: 0;
+    }
+
+    .video-teaser {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 32px;
+    }
+
+    .video-teaser p {
+        margin-top: 32px;
+    }
+
+    .teaser-container .two-column-wrapper-1-1 {
+        padding: 24px 0;
+    }
+}
+
 @media screen and (min-width: 1280px) {
-    .two-column-wrapper {
+    .two-column-wrapper-3-1 {
         grid-template-columns: 3fr 1fr;
     }
 }

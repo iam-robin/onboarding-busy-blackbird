@@ -11,6 +11,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: #2E5F80;
+}
+
 a.external-link {
     display: flex;
     align-items: flex-start;

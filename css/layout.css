@@ -230,7 +230,7 @@ header nav ul li {
 }
 
 header img {
-    width: 100%;
+    max-width: 100%;
     margin: 0;
 }
 
@@ -337,7 +337,7 @@ main>nav ul li.active:before {
 }
 
 .image-section img, .video-section img  {
-    width: 100%;
+    max-width: 100%;
 }
 
 /* COPY TEXT SECTION */
@@ -388,7 +388,7 @@ aside .contact-wrapper {
 }
 
 aside .contact-wrapper img {
-    width: 100%;
+    max-width: 100%;
     margin-top: 4px;
 }
 
@@ -445,7 +445,7 @@ aside:last-child {
 
 /* TEASERS */
 .teasers article img {
-    width: 100%;
+    max-width: 100%;
 }
 
 .teasers .teaser-row {
@@ -539,6 +539,45 @@ footer .external-link:before {
 
     .teaser-container .two-column-wrapper-1-1 {
         padding: 24px 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header-img-wrapper {
+        position: relative;
+    }
+
+    .header-img-wrapper section {
+        position: absolute;
+        width: 30%;
+        top: 16px;
+        right: 40px;
+        padding-left: 40px;
+        background-color: RGBA(61, 144, 199, .8);
+    }
+
+    .input-container {
+        display: flex;
+        margin-bottom: 24px;
+    }
+
+    .input-container>label, .input-container p {
+        width: 30%;
+        margin: 0;
+        text-align: right;
+        padding-right: 32px;
+    }
+
+    .input-container div {
+        width: 100%;
+    }
+
+    .input-container div label:first-of-type {
+        margin: 0;
+    }
+
+    aside section:first-of-type {
+        width: 50%;
     }
 }
 

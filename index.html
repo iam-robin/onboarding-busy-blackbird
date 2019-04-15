@@ -40,16 +40,18 @@
       </nav>
     </div>
     <div class="header-img-wrapper">
-      <picture>
-        <source media="(max-width: 767px)" srcset="img/placeholder-header-small.png">
-        <source media="(max-width: 1280px)" srcset="img/placeholder-header-large.png">
-        <img src="img/placeholder-header-large.png" alt="placeholder image">
-      </picture>
-      <section>
-        <h2>Headline</h2>
-        <p>Text</p>
-        <button type="button">no target</button>
-      </section>
+      <div>
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/placeholder-header-small.png">
+          <source media="(max-width: 1280px)" srcset="img/placeholder-header-large.png">
+          <img src="img/placeholder-header-large.png" alt="placeholder image">
+        </picture>
+        <section>
+          <h2>Headline</h2>
+          <p>Text</p>
+          <button type="button">no target</button>
+        </section>
+      </div>
     </div>
   </header>
 
@@ -242,13 +244,15 @@
 
     <div class="teasers">
       <article class="teaser-row">
-        <div class="image-container">
-          <img src="img/placeholder-teaserrow-image.png" alt="image placeholder">
-        </div>
         <div>
-          <h2>teaserrow with default teaser with image and link (new window)</h2>
-          <p>Set highlight for current Teaser [yes] > element-settings</p>
-          <a href="#" class="external-link">open in new window</a>
+          <div class="image-container">
+            <img src="img/placeholder-teaserrow-image.png" alt="image placeholder">
+          </div>
+          <div>
+            <h2>teaserrow with default teaser with image and link (new window)</h2>
+            <p>Set highlight for current Teaser [yes] > element-settings</p>
+            <a href="#" class="external-link">open in new window</a>
+          </div>
         </div>
       </article>
       <div class="two-column-wrapper-1-1">
@@ -268,17 +272,17 @@
       <div class="teaser-container">
         <hr>
         <h2>Teaserrow with 3 Teasers: First teaser is a video Teaser</h2>
-        <article class="video-teaser">
-          <div>
-            <h3>testvid</h3>
-            <div class="video-thumbnail">
-              <img src="img/placeholder-video-section.png" alt="placeholder image">
-              <div class="time-stamp">3:06</div>
-            </div>
-        </div>
-          <p>this is a test video</p>
-        </article>
-        <div class="two-column-wrapper-1-1">
+        <div class="teaser-row-3-teasers">
+          <article class="video-teaser">
+            <div>
+              <h3>testvid</h3>
+              <div class="video-thumbnail">
+                <img src="img/placeholder-video-section.png" alt="placeholder image">
+                <div class="time-stamp">3:06</div>
+              </div>
+          </div>
+            <p>this is a test video</p>
+          </article>
           <article>
             <h3>default teaser with text</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis fugiat ratione voluptatem vel minus, saepe ullam facilis dicta similique autem rerum tenetur. Eaque id modi ab consectetur quae nobis! Est. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis fugiat ratione voluptatem vel minus, saepe ullam facilis dicta similique autem rerum tenetur. Eaque id modi ab consectetur quae nobis! Est.</p>
@@ -301,9 +305,11 @@
   </main>
 
   <footer>
-    <p>© 2018 Ninja Developers</p>
-    <a href="#" class="external-link">target same window</a>
-    <a href="#" class="external-link" target="_blank">target new window</a>
+    <div>
+      <p>© 2018 Ninja Developers</p>
+      <a href="#" class="external-link">target same window</a>
+      <a href="#" class="external-link" target="_blank">target new window</a>
+    </div>
   </footer>
 
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>

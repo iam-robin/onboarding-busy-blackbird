@@ -20,12 +20,13 @@ a.external-link {
 }
 
 a.external-link:before {
-    content: '';
+    content: '→';
     display: block;
     height: 8px;
     width: 8px;
-    background-color: #469BCE;
-    margin: 7px 12px 0 0;
+    font-size: 12px;
+    line-height: 10px;
+    margin: 7px 10px 0 0;
 }
 
 a.external-link + a.external-link {
@@ -76,7 +77,6 @@ table th {
     width: 24px;
     float: left;
     margin: 4px 8px 0 0;
-    background-color: #469BCE;
 }
 
 .quote p {
@@ -260,12 +260,12 @@ header section button {
 }
 
 header section button:after {
-    content: '';
+    content: '→';
     display: inline-block;
     height: 12px;
     width: 16px;
-    margin-left: 32px;
-    background-color: #469BCE;
+    line-height: 12px;
+    margin-left: 24px;
 }
 
 /* ///////// MAIN ///////// */
@@ -320,11 +320,13 @@ main>nav ul li {
 }
 
 main>nav ul li:before {
-    content: '';
+    content: '→';
     height: 8px;
     width: 8px;
-    margin-right: 4px;
-    background-color: #469BCE;
+    line-height: 10px;
+    font-size: 12px;
+    margin-right: 8px;
+    color: #469BCE;
 }
 
 main>nav ul li.active a {
@@ -332,7 +334,7 @@ main>nav ul li.active a {
 }
 
 main>nav ul li.active:before {
-    background-color: #B2B2B2;
+    color: #B2B2B2;
 }
 
 
@@ -432,7 +434,7 @@ aside:last-child {
 .document-list li .document-image {
     height: 40px;
     width: 32px;
-    background-color: #469BCE;
+    fill: #E8E6E7;
     margin-right: 12px;
 }
 
@@ -503,7 +505,7 @@ footer .external-link {
 }
 
 footer .external-link:before {
-    background-color: #fff;
+    color: #fff;
 }
 
 /* ///////// MEDIA QUERIES ///////// */
